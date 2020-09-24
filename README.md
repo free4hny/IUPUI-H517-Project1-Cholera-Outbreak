@@ -11,6 +11,6 @@ Access the Project Visualization from the below Link:
 ====================================================
 https://free4hny.github.io/IUPUI-H517-Project1-Cholera-Outbreak/
 
-This the Visualization By our proffessor "Khairi Reda":
+This the Visualization By our professor "Khairi Reda":
 =======================================================
 https://www.evl.uic.edu/kreda/vis/snowcholera/
