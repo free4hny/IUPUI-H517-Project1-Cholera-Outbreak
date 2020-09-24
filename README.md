@@ -7,3 +7,6 @@ Details on the Project 1 can be found on below Link:
 https://khreda.com/teaching/2020/H517/project1/
 
 
+Access the Project Visualization from the below Link:
+====================================================
+https://free4hny.github.io/IUPUI-H517-Project1-Cholera-Outbreak/
