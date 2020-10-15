@@ -1,6 +1,6 @@
 # H517Project1
 This was my first project for my H517 Data Visualization class at IUPUI. Please see the visualization here>>:
-https://youtu.be/wxHvN1Gf4Ww
+https://youtu.be/BCP6uOHeVl0
 
 Details on the Project 1 can be found on below Link:
 ============================================
