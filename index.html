@@ -676,27 +676,27 @@
 				
 	</script>
 	
-	   // Generate the pie
-    var pie = d3.pie();
+	  # Generate the pie ### thought to implement the pie but it did not work-Abhishek
+    #var pie = d3.pie();
 
-    // Generate the arcs
-    var arc = d3.arc()
-                .innerRadius(0)
-                .outerRadius(radius);
+    #// Generate the arcs
+   # var arc = d3.arc()
+   #             .innerRadius(0)
+    #            .outerRadius(radius);
 
-    //Generate groups
-    var arcs = g.selectAll("arc")
-                .data(pie(data))
-                .enter()
-                .append("g")
-                .attr("class", "arc")
+    #//Generate groups
+   # var arcs = g.selectAll("arc")
+             #   .data(pie(data))
+             #   .enter()
+              #  .append("g")
+              #  .attr("class", "arc")
 
-    //Draw arc paths
-    arcs.append("path")
-        .attr("fill", function(d, i) {
+    #//Draw arc paths
+    #arcs.append("path")
+      #  .attr("fill", function(d, i) {
             return color(i);
-        })
-        .attr("d", arc);
+      #  })
+       # .attr("d", arc);
 </script>
 </body>
 </body>
