@@ -7,78 +7,40 @@
 	<title>Abhishek' Cholera Project</title>
 	<link type="text/css" rel="stylesheet" href="cholera.css"/>
 	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="Abhishek/animation.js"></script>
 	
 	<style>
-		svg .street {
-			stroke: white;
-			stroke-width: 1px;
-			fill: none;
-		}
 		
-		svg .mapLabel {
-			font-family: "Times New Roman", Times, serif;
-			fill: yellow;
-		}
 		
-		svg .pump {
-			fill: #69f5a8;
-			stroke: none;
-		}
-		
-		svg .death {
-			stroke: none;
-			r: 2;
-		}
-		
-		svg .graphline {
-			fill: none;
-			stroke-width: 1px;
-		}
-		
-		svg .deathhoverbar:hover {
-			fill-opacity: 1;
-		}
-		
-		svg .graphbutton {
-			rx: 5;
-			ry: 5;
-			stroke: none;
-		}
-		
-		svg .graphbuttonlabel {
-			font-family: 'Arial';
-			font-size: 15px;
-		}
-		
-		.axis path,
-		.axis line {
-			fill: none;
-			stroke: gray;
-			shape-rendering: crispEdges;
-		}
+	</style>
 
-		.axis text {
-			font-family: sans-serif;
-			font-size: 10px;
-			fill: gray;
-		}
-		
+<style> /* set the CSS */
+
+
+	.line {
+	  fill: none;
+	  stroke: steelblue;
+	  stroke-width: 2px;
+	}
+	
+	div.tooltip {
+	  position: absolute;
+	  text-align: center;
+	  width: 100px;
+	  height: 50px;
+	  padding: 5px;
+	  font: 18px sans-serif;
+	  background: rgb(222, 176, 176);
+	  border: 0px;
+	  border-radius: 8px;
+	  pointer-events: none;
+	}
+	
 	</style>
 </head>
 <body>
 
 
-
-	
-		
-		
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	<div>
@@ -92,8 +54,42 @@
 		<br/><br/>
 		<div class="pagetext" style="color:white">
 			<p>
-			The Broad Street cholera outbreak also known as Golden Square outbreak was a severe outbreak of cholera that occurred in 1854 near Broad Street currently known as Broadwick Street. It is in the Soho district of the City of Westminster, London. It happened during the period of 1846–1860 worldwide. This outbreak killed 616 people and is well known as the physician John Snow studied its causes and claimed that contaminated water was the source of this cholera outbreak not the particles in the air. This finding influenced public health and the construction of improved sanitation facilities beginning in the mid-19th century. Later, the term "focus of infection" started to be used to describe sites, such as the Broad Street pump, in which conditions are good for transmission of an infection. Snow's this endeavour also called as double-blind experiment.</a>
+			The Broad Street cholera outbreak also known as Golden Square outbreak was a severe 
+			outbreak of cholera that occurred in 1854 near Broad Street currently known as Broadwick Street.
+			 It is in the Soho district of the City of Westminster, London. It happened during the period of 1846–1860 worldwide. 
+			 This outbreak killed 616 people and is well known as the physician John Snow studied its causes and claimed that contaminated water was the source of this cholera outbreak not the particles in the air. 
+			 This finding influenced public health and the construction of improved sanitation facilities beginning in the mid-19th century. Later, the term "focus of infection" started to be used to describe sites, such as the Broad Street pump, in which conditions are good for transmission of an infection. 
+			 Snow's this endeavour also called as double-blind experiment.</a>
+			 			
 			</p>
+			<div class='center'>
+
+				<p class="awesome">Click On the Graph and see Gender Based Deaths</p>
+			  
+			  
+			<h1><h1 class="ml7" style="color:chocolate">
+				<span class="letters-container">
+				  <span class="letters letters-left"></span>
+				  <span class="letters bang">          >>>>>>>>>>>>></span>
+				</span>
+				<span class="circle circle-white"></span>
+				<span class="circle circle-dark"></span>
+				<span class="circle circle-container"><span class="circle circle-dark-dashed"></span></span>
+			  </h1>
+			</div>
+			  
+			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script></h1>
+			<P>
+				<a href="http://127.0.0.1:5500/Abhishek/GenderBarChart.html" style="color:yellow">
+					<img src="http://127.0.0.1:5500/Abhishek\BARGRAPH.JPG"
+						alt="Deaths BY Gender"
+						title="Bar graph"
+						style="widows: 500px"
+						width="1500" height="400"
+						/>
+				</a>
+
+			</P>
 		</div>
 		<svg id="map" width="49%" viewBox="0 0 500 500">
 		</svg>
@@ -167,6 +163,8 @@
 		let streets = [];
 		let mapLabels = [];
 		let pumps = [];
+		let brewery = [{"x": 13.9 , "y": 9.7 }]
+		let workhouse = [{"x": 12.8 , "y": 8.3 }]
 		
 		let deathDays = [];
 		let deaths = [];
@@ -192,7 +190,18 @@
 				ageRanges[i].opacity = 1;
 			}
 		}
-		
+
+
+// 		
+
+
+
+
+
+
+
+		// Display Total deaths on MAp
+
 		function displayTotal() {
 			resetElements();
 			
@@ -676,6 +685,7 @@
 				
 	</script>
 	
+	
 	  # Generate the pie ### thought to implement the pie but it did not work-Abhishek
     #var pie = d3.pie();
 
@@ -698,8 +708,7 @@
       #  })
        # .attr("d", arc);
 </script>
-</body>
-</body>
+
 
 
 </html>
