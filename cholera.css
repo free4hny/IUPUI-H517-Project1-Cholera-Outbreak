@@ -6,14 +6,10 @@
 }
 
 .pagesubtitle {
-	color: black;
+	color:white;
 	font-family: 'Alice', serif;
 	font-size: 15x;
 	font-weight: bold;
-}
-
-.pagetext {
-	
 }
 
 .pagebutton {
@@ -48,12 +44,14 @@ svg .death {
 }
 
 svg .graphline {
-	fill: none;
-	stroke-width: 1px;
+	fill: red;
+	stroke:yellow;
+	stroke-width: 2px;
+	
 }
 
 svg .deathhoverbar:hover {
-	fill-opacity: 1;
+	fill-opacity: 0.001;
 }
 
 svg .graphbutton {
@@ -65,6 +63,7 @@ svg .graphbutton {
 svg .graphbuttonlabel {
 	font-family: 'Arial';
 	font-size: 15px;
+	
 }
 
 .axis path,
@@ -77,8 +76,9 @@ svg .graphbuttonlabel {
 .axis text {
 	font-family: sans-serif;
 	font-size: 10px;
-	fill: gray;
+	fill: white;
 }
+
 
 
 /* for Tooltip */
