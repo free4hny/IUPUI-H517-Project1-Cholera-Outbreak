@@ -80,8 +80,8 @@
 			  
 			  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script></h1>
 			<P>
-				<a href="GenderBarChart.html" style="color:yellow">
-					<img src="BARGRAPH.JPG"
+				<a href="http://127.0.0.1:5500/Abhishek/GenderBarChart.html" style="color:yellow">
+					<img src="http://127.0.0.1:5500/Abhishek\BARGRAPH.JPG"
 						alt="Deaths BY Gender"
 						title="Bar graph"
 						style="widows: 500px"
@@ -93,11 +93,13 @@
 		</div>
 		<svg id="map" width="49%" viewBox="0 0 500 500">
 		</svg>
+
 		<svg id="graph" width="49%" viewBox="0 0 500 500">
 			<text id='label' x='5' y='20' fill="White" >Deaths per day
 				<tspan fill="red" style="baseline-shift: sub;">Interacting with "MAP"</tspan>
 			</text>
 		</svg>
+
 	</div>
 <h1 style="color:orange"> Here is my video Presentation</h1>
 
@@ -325,8 +327,8 @@
 				.attr("y", padding)
 				.attr('width', hoverbarWidth)
 				.attr("height", graphHeight - padding * 2)
-				.attr("fill", "yellow")
-				.attr("fill-opacity", "0.004")
+				.attr("fill", "black")
+				.attr("fill-opacity", "0.001")
 				.attr("stroke", "none")
 				.attr("stroke-width", "0")
 				.attr("id", function(d) { return d.deathdate; })
@@ -341,7 +343,7 @@
 				.on("mouseout", function(d) {
 					map.selectAll(".death").attr("visibility","visible");
 				})
-				.append("title")
+				.append("title","test")
 				.text(function(d) {
 					return d.deathdate + ": " + d.total + 
 						(d.total==1 ? " death" : " deaths");
@@ -618,6 +620,7 @@
 					.append('rect')
 					
 					.attr('class', 'pump')
+					.attr('title','test')
 					.attr('width', pumpSize)
 					.attr('height', pumpSize)
 					.attr('x', function(d) { return mapXScale(d.x) - pumpSize / 2; })
