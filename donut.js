@@ -40,19 +40,19 @@ const data = [
         name: 'Date: 07-Sep',
         percentage: 05,
         value: 571,
-        color: '#3BCB60',
+        color: '#32a8a2',
       },
       {
         name: 'Date: 08-Sep',
         percentage: 02,
         value: 571,
-        color: '#3BCB60',
+        color: '#b8b530',
       },
       {
         name: 'Date: 09-Sep',
         percentage: 02,
         value: 571,
-        color: '#3BCB60',
+        color: '#b130b8',
       },
   ];
   
