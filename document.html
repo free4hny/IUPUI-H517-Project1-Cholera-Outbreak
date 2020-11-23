@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Abhishek's Cholera Project- About</title>
+	<link type="text/css" rel="stylesheet" href="cholera.css"/>
+	<style>
+	</style>
+</head>
+<body style="background-color:black;">
+	
+	<div style='max-width: 1000px'>
+		<div class="pagetitle" style="float: left;"><u><b>Cholera Outbreak: London, 1854</b></u></div>
+		<div style="float: right;">
+			<form>
+				<input class="pagebutton" type="button" value="Back"
+				onclick="window.location.href='index.html'" />
+			</form>
+		</div>
+		<br/>
+		<br/>
+		<u><div class="pagesubtitle">About this project</div></u>
+		<div class="pagetext" style="color:white">
+			<p>
+				This data visualization was created by <b>Abhishek Bhardwaj</b> as an assignment for <b>H517: "Visualization Design, Analysis, & Evaluation" at IUPUI in Fall 2020</b>, taught by <b>Dr. Khairi Reda</b>. The purpose of the assignment was to reproduce Dr. John Snow's outbreak map (depicted below) as an interactive visualization using JavaScript and the D3 data visualization library.
+			</p>
+			<p>
+				The street diagrams, pump locations, and death locations were provided as part of the assignment. The instructor also provided fictional demographic data for each death.
+			</p>
+			<p>
+				To complete this assignment, I had to overcome the following challenges:
+				<ul>
+					<li>I had one month to complete the project.</li>
+					<li>I did not have previous experience with JavaScript and CSS.</li>
+					<li>This was my first project with the D3 library.</li>
+					<li>Had to understand the concepts about Javascript, CSS and D3 from scratch which took me lot of time and patience</li
+				</ul>
+			</p>
+			<p>
+				For more on the 1854 Broad Street cholera outbreak, and Dr. John Snow's groundbreaking work in germ theory, epidemiology, and data visualization, please go and check this Article>> <a href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak" style="color:yellow"> Article on Cholera outbreak</a> on Wikipedia.
+			</p>
+			<p>
+				The source for this project is available on GitHub as <a href="https://github.com/free4hny/IUPUI-H517-Project1-Cholera-Outbreak" style="color:yellow">IUPUI-H517-Project1-Cholera</a>.
+			</p>
+			<a href="https://en.wikipedia.org/wiki/File:Snow-cholera-map-1.jpg" style="color:yellow">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg"
+					alt="John Snow's cholera map, via Wikimedia Commons"
+					title="John Snow's cholera map, via Wikimedia Commons"
+					style="width:500px"
+					/>
+			</a>
+		</div>
+		<div class="pagesubtitle" style="color:orange"><b>How did you go about designing the visualization?</b></div>
+		<div class="pagetext" style="color:white">
+			<p>
+				I developed the visualization iteratively. I started by rendering the map, the pumps, and the death locations as the minimum viable product. The instructor provided a detailed rubric for how the project would be graded, and I added the graph and other features one by one according to those requirements and as my time and expertise allowed.
+			</p>
+			<p>
+				I estimated the placement of the street and building labels by temporarily adding an onclick event to the map. This logged the location of each click for a starting estimate of the label placement. Afterward I commented out the event.
+			</p>
+			<p>
+				The X scale of the graph was initially separate from an X rangeband scale that I used to draw the gray hoverbars. However, I couldn't get the bars to center over the drawn datapoints, probably due to rounding. I finally figured out how to use the same X scale to place the hoverbars, which makes much more sense than trying to keep parallel scales in synch.
+			</p>
+			<p>
+				I asked two subjects to provide user testing for the visualization. I simply presented them with the web page and ask them to interact with it. The resulting observations helped me improve the display and clarify the accompanying text.
+			</p>
+			<p>
+				One of the user test observations was that it is difficult to tell the different shades of green on the By Age graph apart. I experimented with different color schemes, but none of the alternatives seemed to be more clear. Categorical color sets of six colors were not colorblind-safe, and didn't convey a sense of increasing age. Diverging colorsets used pale colors in the mid-range, which weren't visible against the white background. In the end I decided that my initial green shading was as adequate a solution as I was likely to find.
+			</p>
+		</div>
+		<div class="pagesubtitle" style="color:orange">What did we find?</div>
+		<div class="pagetext" style="color:white">
+			<p>
+				<img width="25%" style="float:right;margin-left:15px" src="deathsperday.JPG"/>
+				Obviously, as Dr. Snow found, the locations of the deaths are strongly correlated with the location of the Broad Street pump. Given the fictional demographics provided, it is probably no surprise that there is no significant difference in the rate of deaths between male and female victims. What is much more surprising is the rate of deaths by age. One would suppose the most vulnerable populations would be the very young (0-10) and the very old (> 80), and the deaths by age graph (shown here, filtered to show those populations) seem to bear out that hypothesis. However, estimated census data provided by the instructor suggests that only about 1% of the population falls into the > 80 age range (compared to 28% for the 0-10 age range). And yet at the peak of the outbreak, over 1/3 of the fatalities were from this age range, implying a much higher mortality rate than for the 0-10 age range. If the fictional demographic data is a valid approximation of the real data, one assumes that nobody over the age of 80 survived the outbreak.
+			</p>
+		</div>
+		
+		
+		
+		<div>
+		<p><b>John Snow and the cholera outbreak of 1854 with Mike Jay | Medical London and HarvardX</b></p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Pq32LB8j2K8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/lNjrAXGRda4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+	<p> </p>
+	<br><br>
+	
+	
+	<h2 style="color:yellow">This Sketch had many changes changes and finally something like this I came up with this:</h2>
+	<img src="Rough sketch.jpg" alt="Trulli" width="500" height="500">
+	
+	<p style="color:orange">These are the links referred while bulding this Visualization.</p>
+	
+	<div class="pagetext" style="color:#8cf5ea">
+	<p>
+	<a href="https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak">https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak<a/> <br>
+	<a href="http://pundita.blogspot.com/2018/12/john-snow-versus-miasma.html">http://pundita.blogspot.com/2018/12/john-snow-versus-miasma.html</a> <br>
+	<a href = "https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic">https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic</a> <br>
+	<a href="https://uk.toluna.com/opinions/4112318/The-Broad-Street-cholera-outbreak,-or-Golden-Square"></a> <br>
+	<a href="https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html">https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html</a> <br>
+	<a href="https://chartio.com/resources/tutorials/how-to-show-data-on-mouseover-in-d3js/">https://chartio.com/resources/tutorials/how-to-show-data-on-mouseover-in-d3js/</a> <br>
+	<a href="https://www.w3schools.com/graphics/">https://www.w3schools.com/graphics/</a> <br>
+	<a href="https://www.d3-graph-gallery.com/graph/line_basic.html">href="https://www.d3-graph-gallery.com/graph/line_basic.html</a> <br>
+		</p>
+	</div>
+	</body>
+
+
+</html>
